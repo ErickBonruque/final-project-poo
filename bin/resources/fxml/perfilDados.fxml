@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.PerfilDadosController">
+   <children>
+      <Text fill="WHITE" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do seu perfil" textAlignment="CENTER" wrappingWidth="638.0">
+         <font>
+            <Font name="SansSerif Bold" size="27.0" />
+         </font>
+      </Text>
+      <Line endX="340.0" layoutX="197.0" layoutY="160.0" startX="-96.0" stroke="WHITE" strokeWidth="2.0" />
+      <Text fill="WHITE" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não esqueça do seu Login :)" textAlignment="CENTER" wrappingWidth="638.0">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" layoutY="239.0" prefHeight="390.0" prefWidth="638.0" spacing="40.0">
+         <children>
+            <TextField fx:id="emailField" prefHeight="48.0" prefWidth="440.0" promptText="example.email" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;" text="example.email">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="senhaField" prefHeight="48.0" prefWidth="440.0" promptText="\@ExampleSenha1234" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;" text="\@ExampleSenha1234">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="alterarBtn" mnemonicParsing="false" onAction="#handleAltBtn" prefHeight="44.0" prefWidth="256.0" styleClass="button_green" stylesheets="@../css/loginRegisterButton.css" text="ALTERAR DADOS" textFill="#fbfcfc">
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutBtn" prefHeight="44.0" prefWidth="256.0" styleClass="button_green" stylesheets="@../css/loginRegisterButton.css" text="DESLOGAR" textFill="#fbfcfc">
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="98.0" right="98.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

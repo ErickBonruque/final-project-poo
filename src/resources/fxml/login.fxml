@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1296.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.LoginController">
+   <children>
+      <Pane layoutX="127.0" layoutY="293.0" prefHeight="93.0" prefWidth="343.0">
+         <children>
+            <Text layoutX="87.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ShieldPass">
+               <font>
+                  <Font name="Consolas Bold Italic" size="45.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="92.0" fitWidth="74.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#29353d" height="772.0" layoutX="648.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0" />
+      <Text fill="#013703" layoutX="127.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" A confiança que sua privacidade merece">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailFild" layoutX="813.0" layoutY="247.0" prefHeight="55.0" prefWidth="320.0" promptText="Email" style="-fx-background-color: #29353d; -fx-border-color: #465058; -fx-text-inner-color: #FBFCFC;">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="813.0" layoutY="348.0" prefHeight="55.0" prefWidth="320.0" promptText="Senha" style="-fx-background-color: #29353d; -fx-border-color: #465058; -fx-text-inner-color: #FBFCFC;">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </PasswordField>
+      <Line endX="-100.0" endY="320.0" fill="#465058" layoutX="785.0" layoutY="312.0" startX="-100.0" startY="-101.0" stroke="#465058" />
+      <Button fx:id="loginBtn" layoutX="813.0" layoutY="464.0" mnemonicParsing="false" onAction="#handleLoginBtn" prefHeight="55.0" prefWidth="320.0" styleClass="button_green" stylesheets="@../css/loginRegisterButton.css" text="LOGIN" textFill="#fbfcfc">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cadastroBtn" layoutX="882.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleCadastroBtn" prefHeight="45.0" prefWidth="182.0" styleClass="button_small" stylesheets="@../css/loginRegisterButton.css" text="Novo aqui? Cadastre-se" textFill="#dadada" />
+      <Text fill="#fbfcfc" layoutX="830.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem-vindo de volta!">
+         <font>
+            <Font name="SansSerif Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

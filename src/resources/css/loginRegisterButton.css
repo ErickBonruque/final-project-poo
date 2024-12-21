@@ -1,0 +1,19 @@
+.button_green{
+    -fx-background-color:  #4CAF50;
+    -fx-cursor: hand;
+    -fx-background-radius: 1em;
+}
+
+.button_green:hover {
+  -fx-background-color: #95e397;
+}
+
+.button_small{
+    -fx-background-color:  #29353d;
+    -fx-cursor: hand;
+    -fx-text-fill: #dadada;
+}
+
+.button_small:hover {
+    -fx-text-fill: #aeaeae;
+}

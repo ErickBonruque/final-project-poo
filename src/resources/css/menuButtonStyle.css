@@ -1,0 +1,32 @@
+.button_menu
+{
+    -fx-background-color:  #353C40;
+    -fx-cursor: hand;
+}
+
+.button_menu:hover {
+  -fx-background-color: #6393E7;
+  -fx-background-radius: 1em;
+}
+
+.button_menu:pressed
+{
+    -fx-background-color: #1A1F71;
+    -fx-background-radius: 1em;
+}
+
+.button_menu:focused{
+  -fx-background-color: #4CAF50;
+  -fx-background-radius: 1em;
+}
+
+.edict_button
+{
+    -fx-background-color:   #182025;
+    -fx-cursor: hand;
+    -fx-background-radius: 3em;
+}
+
+.edict_button:hover {
+  -fx-background-color: #394145;
+}

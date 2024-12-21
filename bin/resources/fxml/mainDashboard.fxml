@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1296.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.MainDashboardController">
+   <children>
+      <BorderPane prefHeight="772.0" prefWidth="1296.0">
+         <left>
+            <VBox prefHeight="772.0" prefWidth="245.0" style="-fx-background-color: #353C40;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="76.0" prefWidth="245.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addSenhaBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleAddSenha" prefHeight="25.0" prefWidth="254.0" styleClass="button_menu" stylesheets="@../css/menuButtonStyle.css" text="Adicionar senha" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="perfilBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handlePerfil" prefHeight="25.0" prefWidth="254.0" styleClass="button_menu" stylesheets="@../css/menuButtonStyle.css" text="Perfil" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="vItems" prefHeight="772.0" prefWidth="376.0" spacing="20.0" style="-fx-background-color: #182025; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </padding></VBox>
+         </center>
+         <right>
+            <Pane fx:id="paneInfo" prefHeight="772.0" prefWidth="665.0" style="-fx-background-color: #182025;" BorderPane.alignment="CENTER_LEFT" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="473.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.ItemController">
+   <children>
+      <Text fx:id="mailText" fill="WHITE" layoutX="45.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="example.gmail.com">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="nameAppText" fill="WHITE" layoutX="45.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="App Name">
+         <font>
+            <Font name="SansSerif Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" />
+   </padding>
+</AnchorPane>
