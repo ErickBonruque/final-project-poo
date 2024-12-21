@@ -4,6 +4,12 @@
 
 ShieldPass é um gerenciador de acessos e senhas projetado para oferecer segurança e praticidade na gestão de credenciais. Este projeto está na sua primeira fase, funcionando como um protótipo funcional.
 
+## PDF
+
+[Pdf de descrição do projeto](./pdf-desc/POO-ModeloDocAnaliseProjetoFinal.pdf)
+
+Este PDF fornece uma descrição detalhada do projeto, incluindo seus requisitos e etapas passo a passo.
+
 ## Inspirações
 
 É fundamental dar os devidos créditos às inspirações utilizadas nos designs. Ressalto que nada foi copiado ou comprado, apenas serviu como referência para o desenvolvimento do layout e organização.
