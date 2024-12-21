@@ -9,6 +9,7 @@ public class AppModel {
     private String website;
     private String notes;
     private Date date;
+    private int id;
 
     public AppModel(String name, String email, String password, String website, String notes, Date date) {
         this.name = name;
@@ -65,6 +66,14 @@ public class AppModel {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
