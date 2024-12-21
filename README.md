@@ -6,7 +6,7 @@ ShieldPass é um gerenciador de acessos e senhas projetado para oferecer seguran
 
 ## Inspirações
 
-Importante dar os creditos na inspiração dos designs, nada foi copiado ou comprado apenas utilizado como inspiração no design e organização:
+É fundamental dar os devidos créditos às inspirações utilizadas nos designs. Ressalto que nada foi copiado ou comprado, apenas serviu como referência para o desenvolvimento do layout e organização.
 
 [BitWarden MacOS Design Concept JavaFX GUI using Scene Builder and IntelliJ](https://www.youtube.com/watch?v=GJK3cyJLP0g&list=PLlGZc17KPrVAKj3Tl1im5HN8Lh5nYTXyB&index=2)
 
