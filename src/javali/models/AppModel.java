@@ -76,6 +76,15 @@ public class AppModel {
         this.id = id;
     }
 
+    public void editApp(String name, String email, String password, String website, String notes, Date date) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.website = website;
+        this.notes = notes;
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "AppModel{" +
