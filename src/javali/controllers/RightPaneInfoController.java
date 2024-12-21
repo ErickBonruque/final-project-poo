@@ -1,6 +1,7 @@
 package javali.controllers;
 
 import java.io.IOException;
+import java.sql.Date;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,6 +16,9 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
 public class RightPaneInfoController {
+
+    @FXML
+    private Text dateCreateText;
 
     @FXML
     private Button deleteBtn;
@@ -72,12 +76,13 @@ public class RightPaneInfoController {
 
 
 
-    public void setInfo(String name, String email, String senha, String site, String notes){
+    public void setInfo(String name, String email, String senha, String site, String notes, Date date) {
         nameSiteBtn.setText(name);
         emailField.setText(email);
         senhaField.setText(senha);
         siteText.setText(site);
         notesText.setText(notes);
+        dateCreateText.setText(date.toString());
     }
 
 }

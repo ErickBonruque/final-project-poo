@@ -77,5 +77,20 @@
             </ImageView>
          </graphic>
       </Button>
+      <Line endX="340.0" layoutX="186.0" layoutY="554.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <VBox layoutX="86.0" layoutY="570.0">
+         <children>
+            <Text fill="#c3c3c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Criação" wrappingWidth="570.130859375">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="dateCreateText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem" wrappingWidth="563.130859375">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
    </children>
 </Pane>

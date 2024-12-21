@@ -1,18 +1,22 @@
 package javali.models;
 
+import java.sql.Date;
+
 public class AppModel {
     private String name;
     private String email;
     private String password;
     private String website;
     private String notes;
+    private Date date;
 
-    public AppModel(String name, String email, String password, String website, String notes) {
+    public AppModel(String name, String email, String password, String website, String notes, Date date) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.website = website;
         this.notes = notes;
+        this.date = date;
     }
 
     public String getName() {
@@ -53,6 +57,14 @@ public class AppModel {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     @Override

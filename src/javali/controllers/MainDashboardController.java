@@ -83,11 +83,11 @@ public class MainDashboardController implements Initializable{
             // Carregar os dados de APP's
             List<AppModel> appModels = new ArrayList<>();
 
-            appModels.add(new AppModel("Facebook", "example@gmail.com", "123456", "facebook.com", "Site Velho Legal"));
-            appModels.add(new AppModel("Intagram", "example@gmail.com", "123456", "instagram.com", "Site igual o site velho Legal"));
-            appModels.add(new AppModel("Twitter", "example@gmail.com", "123456", "x.com", "Site para falar mal dos outros"));
-            appModels.add(new AppModel("Telegram", "example@gmail.com", "123456", "telegram.com", "Site para conseguir coisas ilegais"));
-            appModels.add(new AppModel("Macumba", "example@gmail.com", "123456", "macumba.com", "Site para conseguir uma namorada :("));
+            appModels.add(new AppModel("Facebook", "example@gmail.com", "123456", "facebook.com", "Site Velho Legal", java.sql.Date.valueOf("2024-12-12")));
+            appModels.add(new AppModel("Intagram", "example@gmail.com", "123456", "instagram.com", "Site igual o site velho Legal", java.sql.Date.valueOf("2024-12-13")));
+            appModels.add(new AppModel("Twitter", "example@gmail.com", "123456", "x.com", "Site para falar mal dos outros", java.sql.Date.valueOf("2024-12-14")));
+            appModels.add(new AppModel("Telegram", "example@gmail.com", "123456", "telegram.com", "Site para conseguir coisas ilegais", java.sql.Date.valueOf("2024-12-15")));
+            appModels.add(new AppModel("Macumba", "example@gmail.com", "123456", "macumba.com", "Site para conseguir uma namorada :(", java.sql.Date.valueOf("2024-12-16")));
 
             Node[] nodes = new Node[appModels.size()];
             isSelect = new boolean[appModels.size()];
@@ -115,7 +115,7 @@ public class MainDashboardController implements Initializable{
                         loader_info.setLocation(getClass().getResource("/resources/fxml/rightPaneInfo.fxml"));
                         Pane pane = loader_info.load();
                         RightPaneInfoController rightPaneInfoController = loader_info.getController();
-                        rightPaneInfoController.setInfo(appModels.get(j).getName(), appModels.get(j).getEmail(), appModels.get(j).getPassword(), appModels.get(j).getWebsite(), appModels.get(j).getNotes());
+                        rightPaneInfoController.setInfo(appModels.get(j).getName(), appModels.get(j).getEmail(), appModels.get(j).getPassword(), appModels.get(j).getWebsite(), appModels.get(j).getNotes(), appModels.get(j).getDate());
                         paneInfo.getChildren().clear();
                         paneInfo.getChildren().add(pane);
 
@@ -155,7 +155,7 @@ public class MainDashboardController implements Initializable{
             loader_info.setLocation(getClass().getResource("/resources/fxml/rightPaneInfo.fxml"));
             Pane pane = loader_info.load();
             RightPaneInfoController rightPaneInfoController = loader_info.getController();
-            rightPaneInfoController.setInfo(appModels.get(0).getName(), appModels.get(0).getEmail(), appModels.get(0).getPassword(), appModels.get(0).getWebsite(), appModels.get(0).getNotes());
+            rightPaneInfoController.setInfo(appModels.get(0).getName(), appModels.get(0).getEmail(), appModels.get(0).getPassword(), appModels.get(0).getWebsite(), appModels.get(0).getNotes(), appModels.get(0).getDate());
             paneInfo.getChildren().add(pane);
 
             // Selecionar o primeiro item por padrão
