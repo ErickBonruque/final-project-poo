@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.RightPaneInfoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.dashboard.RightPaneInfoController">
    <children>
       <VBox layoutX="86.0" layoutY="131.5576171875">
          <children>
@@ -61,7 +61,7 @@
       </VBox>
       <Button fx:id="deleteBtn" layoutX="425.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="71.0" prefWidth="72.0" styleClass="edict_button" stylesheets="@../css/menuButtonStyle.css">
          <graphic>
-            <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" smooth="true">
                <image>
                   <Image url="@../images/icons/excluir.png" />
                </image>
@@ -70,7 +70,7 @@
       </Button>
       <Button fx:id="edictBtn" layoutX="497.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="62.0" prefWidth="63.0" styleClass="edict_button" stylesheets="@../css/menuButtonStyle.css">
          <graphic>
-            <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" smooth="true">
                <image>
                   <Image url="@../images/icons/editar.png" />
                </image>

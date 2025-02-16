@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
+import javali.database.connection.SQLiteConnection;
 
 // Que vida triste
 
@@ -15,6 +15,9 @@ public class Main extends Application {
     double x, y = 0;
     @Override
     public void start(Stage primaryStage) throws Exception {
+
+        SQLiteConnection.getConnection();
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/fxml/login.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);

@@ -10,6 +10,7 @@ public class AppModel {
     private String notes;
     private Date date;
     private int id;
+    private int userId;
 
     public AppModel(String name, String email, String password, String website, String notes, Date date) {
         this.name = name;
@@ -75,6 +76,14 @@ public class AppModel {
     public void setId(int id) {
         this.id = id;
     }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }   
 
     public void editApp(String name, String email, String password, String website, String notes, Date date) {
         this.name = name;

@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.AddLoginPageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.app.AddLoginPageController">
    <children>
-      <Text fx:id="nameSiteBtn" fill="WHITE" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Novo Login" textAlignment="CENTER" wrappingWidth="638.0">
+      <Text fill="WHITE" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Novo Login" textAlignment="CENTER" wrappingWidth="638.0">
          <font>
             <Font name="SansSerif Bold" size="27.0" />
          </font>
@@ -58,7 +58,7 @@
             </VBox>
          </children>
       </Pane>
-      <Text fx:id="nameSiteBtn1" fill="WHITE" layoutX="-1.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O que gostaria de adicionar hoje?" textAlignment="CENTER" wrappingWidth="638.0">
+      <Text fill="WHITE" layoutX="-1.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O que gostaria de adicionar hoje?" textAlignment="CENTER" wrappingWidth="638.0">
          <font>
             <Font name="SansSerif Regular" size="15.0" />
          </font>

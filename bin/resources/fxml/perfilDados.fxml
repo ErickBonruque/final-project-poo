@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.PerfilDadosController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="638.0" style="-fx-background-color: #182025;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javali.controllers.components.PerfilDadosController">
    <children>
       <Text fill="WHITE" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do seu perfil" textAlignment="CENTER" wrappingWidth="638.0">
          <font>
@@ -24,12 +24,12 @@
       </Text>
       <VBox alignment="TOP_CENTER" layoutY="239.0" prefHeight="390.0" prefWidth="638.0" spacing="40.0">
          <children>
-            <TextField fx:id="emailField" prefHeight="48.0" prefWidth="440.0" promptText="example.email" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;" text="example.email">
+            <TextField fx:id="emailField" prefHeight="48.0" prefWidth="440.0" promptText="example.email" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </TextField>
-            <TextField fx:id="senhaField" prefHeight="48.0" prefWidth="440.0" promptText="\@ExampleSenha1234" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;" text="\@ExampleSenha1234">
+            <TextField fx:id="senhaField" prefHeight="48.0" prefWidth="440.0" promptText="\@ExampleSenha1234" style="-fx-background-color: #41494E; -fx-text-inner-color: #FFFFFF;">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
